@@ -5,9 +5,13 @@ import "hardhat/console.sol";
 
 import "./dependencies/holyzeppelin/contracts/access/Ownable.sol";
 import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
-import "./dependencies/holyzeppelin/contracts/token/ERC20/ERC20.sol";
+import "./dependencies/holyzeppelin/contracts/token/ERC20/ERC20Burnable.sol";
 
-contract TestToken is ERC20Burnable, Ownable {
+contract TestToken 
+  is 
+  ERC20Burnable, 
+  Ownable 
+{
 
     using SafeMath for uint256;
     
